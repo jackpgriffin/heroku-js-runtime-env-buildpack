@@ -26,5 +26,5 @@ do
     -r /app/.heroku-js-runtime-env/injectable_env.rb \
     -e "InjectableEnv.replace('$js_bundle_filename', "/^$JS_RUNTIME_ENV_PREFIX/")"
     
-  gzip -f $js_bundle_filename
+  gzip -k -f $js_bundle_filename
 done
